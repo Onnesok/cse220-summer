@@ -10,26 +10,53 @@ import numpy as np
 
 # Test 01: Play Right
 def playRight(sequence,beats):
-  # TO DO
-  return None
+  for i in range(len(beats)):
+    if beats[i] == 1:
+      temp = sequence[len(sequence)-1]
+      for i in range(len(sequence)-1, 0, -1):
+        sequence[i] = sequence[i-1]
+      sequence[0] = temp
+  
+  return sequence
 
 
 # Test 02: Discard Cards
 def discardCards(cards,number):
-  # TO DO
-  return None
+  for k in range(len(cards)):
+      for i in range(len(cards)):
+        if cards[i] == number:
+          for j in range(i, len(cards)-1):
+            cards[j] = cards[j+1]
+            cards[j+1] = 0
+            
+  return cards
 
 
 #Test 03: Merge Lineup
 def mergeLineup(pokemon_1, pokemon_2):
-  # TO DO
-  return None
+  pk1 = pokemon_1
+  for i in range(len(pk1)):
+    for j in range(len(pokemon_2)-i-1, -1, -1):
+      if pk1[i] == None:
+        pk1[i] = 0
+      if pokemon_2[j] == None:
+        pokemon_2[j] = 0
+      pk1[i] = pk1[i] + pokemon_2[j]
+      break
+  return pk1
 
 
 # Test 04: Balance your Salami
 def balanceSalami(salami):
-  # TO DO
-  return None
+  cnt = 0
+  rs = False
+  for i in range(len(salami)):
+    cnt += salami[i]
+  if cnt%2 == 0:
+    rs = True
+  else:
+    rs = False
+  return rs
 
 # Test 05: Protecc Salami
 def protectSalami(salami):
