@@ -60,8 +60,27 @@ def balanceSalami(salami):
 
 # Test 05: Protecc Salami
 def protectSalami(salami):
-  # TO DO
-  return None
+  rs = False
+  taka = np.zeros(100, dtype=int)
+  repeat = np.zeros(100, dtype=int)
+  
+  for i in range(len(salami)):
+    cnt = 0
+    if salami[i] not in taka:
+      taka[i] = salami[i]
+      for j in range(len(salami)):
+        if salami[i] == salami[j]:
+          cnt += 1
+    repeat[i] = cnt
+    
+  for i in range(len(salami)):
+    for j in range(i+1, len(salami)):
+      if repeat[i] > 1 and repeat[i] == repeat[j]:
+        #print("i",repeat[i])
+        #print("j",repeat[j])
+        rs = True
+        break
+  return rs
 
 
 # Test 05: Odd Even Wave
