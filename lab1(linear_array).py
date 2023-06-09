@@ -34,14 +34,16 @@ def discardCards(cards,number):
 
 #Test 03: Merge Lineup
 def mergeLineup(pokemon_1, pokemon_2):
-  pk1 = pokemon_1
-  for i in range(len(pk1)):
+  pk1 = np.zeros(len(pokemon_1), dtype=int)
+  
+  #pk1 = pokemon_1
+  for i in range(len(pokemon_1)):
     for j in range(len(pokemon_2)-i-1, -1, -1):
-      if pk1[i] == None:
-        pk1[i] = 0
+      if pokemon_1[i] == None:
+        pokemon_1[i] = 0
       if pokemon_2[j] == None:
         pokemon_2[j] = 0
-      pk1[i] = pk1[i] + pokemon_2[j]
+      pk1[i] = pokemon_1[i] + pokemon_2[j]
       break
   return pk1
 
@@ -85,8 +87,30 @@ def protectSalami(salami):
 
 # Test 05: Odd Even Wave
 def waveYourFlag(arr):
-  # TO DO
-  return None
+  ev = 0
+  od = 0
+  
+  ev1=1
+  od1=1
+  nar = np.zeros(len(arr), dtype=int)
+  #nar = [0]*len(arr)
+  for i in range(0, len(arr), 1):
+    if arr[0]%2 == 0:
+      if arr[i]%2 == 0:
+        nar[ev] = arr[i]
+        ev+=2
+      elif arr[i]%2 != 0:
+        nar[od1] = arr[i]
+        od1+=2
+    
+    if arr[0]%2 != 0:
+      if arr[i]%2 != 0:
+        nar[od] = arr[i]
+        od+=2
+      elif arr[i]%2 == 0:
+        nar[ev1] = arr[i]
+        ev1+=2
+  return nar
 
 
 
