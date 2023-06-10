@@ -1,4 +1,4 @@
-# cse220_Lab_assignment
+# cse220_Lab_assignment(summer23)
 
 [![License Badge](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Compatibility](https://img.shields.io/badge/python-3-brightgreen.svg)](cse220)
@@ -10,7 +10,7 @@
 ## clone / Download
 
 ```bash
-git clne https://github.com/Onnesok/CSE220_LAB
+git clone https://github.com/Onnesok/cse220-summer
 
 ```
 
