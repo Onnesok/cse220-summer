@@ -2,7 +2,7 @@
 
 [![License Badge](https://img.shields.io/badge/license-GNU-blue.svg)](LICENSE)
 [![Compatibility](https://img.shields.io/badge/python-3-brightgreen.svg)](cse220)
-[![Modified](https://img.shields.io/badge/Coverage-full-orange)](cse220)
+[![Modified](https://img.shields.io/badge/Coverage-working-red)](cse220)
 
 
 ```Cse220 (DATA STRUCTURES || ) basic things lab assignments all codes of DATA STRUCTURES ```
