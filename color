@@ -1,4 +1,0 @@
-"folder-path-color.folders": [
-    { "path": "frontend", "symbol": "SR", "tooltip": "Source files" },
-    { "path": "packages/common", "symbol": "T", "tooltip": "Common" }
-]
