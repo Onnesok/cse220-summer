@@ -1,8 +1,8 @@
 # cse220_Lab_assignment(summer23)
 
 [![License Badge](https://img.shields.io/badge/license-GNU-blue.svg)](LICENSE)
-[![Compatibility](https://img.shields.io/badge/python-3-brightgreen.svg)](cse220)
-[![Modified](https://img.shields.io/badge/Coverage-working-red)](cse220)
+[![Compatibility](https://img.shields.io/badge/python-3-brightgreen.svg)](https://www.python.org/)
+[![Modified](https://img.shields.io/badge/Coverage-working-red)](cse220-summer)
 
 
 ```Cse220 (DATA STRUCTURES || ) basic things lab assignments all codes of DATA STRUCTURES ```
