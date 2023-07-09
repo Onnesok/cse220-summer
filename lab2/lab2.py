@@ -13,7 +13,7 @@ def arrangement(m, diff):
     tf = False
   else:
     tf = True
-  return tf
+  return tf 
 
 m = np.array([[7,13,9,14],[12,8,15,11],[10,17,3,2],[15,10,1,4]])
 print_matrix(m)
