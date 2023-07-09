@@ -19,7 +19,7 @@ import numpy as np
 
 def show_knight_move(knight):
     board = np.zeros((8, 8), dtype=int)
-    x, y = knight
+    x, y = knight 
     
     # Possible moves of the knight
     moves = [
