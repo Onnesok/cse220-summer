@@ -6,7 +6,7 @@ def minfunction(arr):
   for i in range(len(arr)):
 
     sum = sum + arr[i]
-    cnt+= 1
+    cnt+= 1 
   return sum/cnt
 
 
