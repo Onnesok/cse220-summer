@@ -13,6 +13,7 @@
 git clone https://github.com/Onnesok/cse220-summer
 
 ```
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url = https://github.com/Onnesok/cse220-summer)
 
 ## Restrictions
 Don't use these code as if it's your own code..... Never use these to cheat in assignments or anywhere...
