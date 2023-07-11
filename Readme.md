@@ -3,6 +3,7 @@
 [![License Badge](https://img.shields.io/badge/license-GNU-blue.svg)](LICENSE)
 [![Compatibility](https://img.shields.io/badge/python-3-brightgreen.svg)](https://www.python.org/)
 [![Modified](https://img.shields.io/badge/Coverage-working-red)](cse220-summer)
+[![Hits](https://hits.sh/github.com/Onnesok/cse220-summer.svg)](https://hits.sh/github.com/Onnesok/cse220-summer/)
 
 
 ```Cse220 (DATA STRUCTURES || ) basic things lab assignments all codes of DATA STRUCTURES ```
@@ -13,7 +14,6 @@
 git clone https://github.com/Onnesok/cse220-summer
 
 ```
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url = https://github.com/Onnesok/cse220-summer)
 
 ## Restrictions
 Don't use these code as if it's your own code..... Never use these to cheat in assignments or anywhere...
