@@ -20,9 +20,13 @@
 #             self.pointer += 1 
             
 #     def peek(self):
+#         if self.head == None:
+#             return None
 #         return (self.head.value)
     
 #     def pop(self):
+#         if self.head == None:
+#             return None
 #         temp = self.head
 #         self.head = self.head.next
 #         temp.next = None
@@ -75,10 +79,10 @@
 
 
 
-###################################################################
-###################  Task 2 #################################
-############################################################ Task 2  #############################################
-##### Using linked list based stack
+# ###################################################################
+# ###################  Task 2 #################################
+# ############################################################ Task 2  #############################################
+# ##### Using linked list based stack
 class Node:
     def __init__(self, val, n):
         self.value = val
@@ -99,9 +103,13 @@ class Stack:
             self.pointer += 1 
             
     def peek(self):
+        if self.head == None:
+            return None
         return (self.head.value)
     
     def pop(self):
+        if self.head == None:
+            return None
         temp = self.head
         self.head = self.head.next
         temp.next = None
@@ -122,8 +130,9 @@ def checkBrackets(string):
             counter_stk.push(count)
         if i in rightBrackets:
             if stk.pointer == -1:
-                print(x)
-                return
+                #print(x)
+                #return
+                pass
             else:
                 validity = False
                 n = stk.pop()
