@@ -88,9 +88,6 @@
     
 # kthelem(5, [7, 10, 4, 20, 15], 4)
 
-#passing
-
-
 ##### 6th ######
     
 # def array_sort(n, arr):
@@ -199,3 +196,82 @@
 
 ###### 12 #######
 
+def train(n, arr, dep):
+    pass
+
+#train(6, [ 0900, 0940, 0950, 1100, 1500, 1800], [0910, 1200, 1120, 1130, 1900, 2000])
+
+# SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+
+
+######### 13  ########
+
+#1,3,4,7,9,9,12,56
+
+pass
+
+##########  14  ##############
+
+# def consecutive(n, a):
+#     cnt = 0
+#     for i in range(n):
+#         for j in range(n-1):
+#             if a[j] > a[j+1]:
+#                 temp = a[j]
+#                 a[j] = a[j+1]
+#                 a[j+1] = temp
+                
+#     for i in range(n-1):
+#         if a[i+1] == a[i] + 1:
+#             pass
+#         else:
+#             break
+           
+#     for j in range(n-1, 1, -1):
+#         if a[j-1] == a[j] - 1:
+#             cnt += 1
+#             pass
+#         else:
+#             break
+ 
+#     if i >= cnt:
+#         print(i+1)
+#     else:
+#         print(cnt+1)
+
+# consecutive(7, [2,6,1,9,4,5,3])
+# consecutive(7,  [1,9,3,10,4,20,2])
+
+
+##############  15  ###############
+
+# def median(a, b):
+#     med = 0
+#     total = (len(a) + len(b))
+#     arr = [0] * total
+#     pointer = 0
+#     for i in range(len(a)):
+#         arr[pointer] = a[i]
+#         pointer += 1
+#     for i in range(len(b)):
+#         arr[pointer] = b[i]
+#         pointer += 1
+    
+#     # (1,3,2)  now sorting 
+    
+#     for i in range(len(arr)):
+#         for j in range(len(arr) - 1):
+#             if arr[j] > arr[j+1]:
+#                 temp = arr[j]
+#                 arr[j] = arr[j+1]
+#                 arr[j+1] = temp
+    
+#     # now median
+#     if len(arr)%2 == 0:
+#         med = float((arr[(len(arr)//2)-1] + arr[(len(arr)//2)])/2)
+#     else:
+#         med = float(arr[len(arr)//2])
+#     print(med)
+
+# median([1,3], [2])
+# median([1,2], [3,4])
