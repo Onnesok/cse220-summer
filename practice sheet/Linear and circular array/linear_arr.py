@@ -230,8 +230,8 @@ def baler_ch0clate(arr, n, m):
 # now eder modde for minimum difference of min number and maximum number hosse ans
 # baler array  
 
-baler_ch0clate([3,4,1,9,56,7,9,12], 8, 5)
-baler_ch0clate([7, 3, 2, 4, 9, 12, 56], 7, 3)
+# baler_ch0clate([3,4,1,9,56,7,9,12], 8, 5)
+# baler_ch0clate([7, 3, 2, 4, 9, 12, 56], 7, 3)
 
 ##########  14  ##############
 
