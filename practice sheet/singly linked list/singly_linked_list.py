@@ -18,7 +18,7 @@ class Node:
 #                 head.next = t
 #                 head = t
                 
-#         elif type(arr) == head:
+#         elif type(arr) == Node:
 #             self.head = arr
             
             
