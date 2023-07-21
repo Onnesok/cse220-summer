@@ -208,18 +208,18 @@ def train(n, arr, dep):
 
 #1,3,4,7,9,9,12,56
 
-def baler_ch0clate(arr, n, m):
-    arr.sort()
-    print(arr)
-    minimum = arr[n-1]
+# def baler_ch0clate(arr, n, m):
+#     arr.sort()
+#     print(arr)
+#     minimum = arr[n-1]
     
-    for i in range(len(arr)-(m+1)):
-        x = abs(arr[i] - arr[i+m-1])
-        if minimum > x:
-            minimum = x
-        else:
-            pass
-    print(minimum)
+#     for i in range(len(arr)-(m+1)):
+#         x = abs(arr[i] - arr[i+m-1])
+#         if minimum > x:
+#             minimum = x
+#         else:
+#             pass
+#     print(minimum)
 
 ####  exlplanation
 # first e sort korsi
