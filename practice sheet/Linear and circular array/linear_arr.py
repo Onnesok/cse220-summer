@@ -208,7 +208,30 @@ def train(n, arr, dep):
 
 #1,3,4,7,9,9,12,56
 
-pass
+def baler_ch0clate(arr, n, m):
+    arr.sort()
+    print(arr)
+    minimum = arr[n-1]
+    
+    for i in range(len(arr)-(m+1)):
+        x = abs(arr[i] - arr[i+m-1])
+        if minimum > x:
+            minimum = x
+        else:
+            pass
+    print(minimum)
+
+####  exlplanation
+# first e sort korsi
+# next suppose n(len of array) and m(choclate) is 8,5
+# so 5th element = 9 and 0 elem = 1 and (9-1) = 8
+# next emne kore 8-(5+1) = 3 bar loop chalabo
+# so, erokom ase, (1 to 9), (3 to 9), (4 to 12), (7 to 56)
+# now eder modde for minimum difference of min number and maximum number hosse ans
+# baler array  
+
+baler_ch0clate([3,4,1,9,56,7,9,12], 8, 5)
+baler_ch0clate([7, 3, 2, 4, 9, 12, 56], 7, 3)
 
 ##########  14  ##############
 
