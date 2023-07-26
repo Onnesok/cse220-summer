@@ -52,6 +52,44 @@ def lowerr(n):
 
 def pi(n):
     if len(n) == 0:
-        return 
+        return ""
+    else:
+        if n[0] == "p" and n[1] == "i":
+            return "3.14" + pi(n[2:])
+        else:
+            return n[0] + pi(n[1:])
 
-print(pi("xpix"))
+#print(pi("xpipix"))
+
+############### 6  #################
+
+def arr11(arr, idx = 0):
+    if len(arr) == idx:
+        return 0
+    else:
+        if arr[idx] == 11:
+            return 1 + arr11(arr, idx = idx+1)
+        else:
+            return 0 + arr11(arr, idx = idx+1)
+
+# print(arr11([1,2,11,0,11], 0))
+
+################  7  ################
+
+def pairstar(n):
+    if len(n) == 1:
+        return n[0]
+    else:
+        if n[0] == n[1]:
+            return n[0] + "*" + pairstar(n[1:])
+        else:
+            return n[0] + pairstar(n[1:])
+
+#print(pairstar("hellooooapp"))
+
+###############  8  #############
+
+def count(n):
+    pass
+
+print(count("abcxxabc"))
