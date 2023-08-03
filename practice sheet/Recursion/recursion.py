@@ -221,6 +221,120 @@ def paren_bit(n):
 ###########  18  ##############
 
 def str_copy(arr, cp, times):
-    pass
+    if len(cp) * times > len(arr):
+        return False
+    elif arr[:len(cp)] == cp:
+        if times == 1:
+            return True
+        else:
+            return str_copy(arr[1:], cp, times-1)
+    else:
+        return str_copy(arr[1:], cp, times)
+        
 
-print(str_copy("catcowcat", "cat", 2))
+# x= 'cbxaaat'
+# a = 'ab'
+# print(x[:len(a)])
+# print(x)
+
+#print(str_copy("catcowcat", "cat", 2))
+
+#################  19  #############
+
+def change_x(arr):
+    if len(arr) == 0:
+        return ""
+    else:
+        if arr[0] == 'x':
+            return 'y' + change_x(arr[1:])
+        else:
+            return arr[0] + change_x(arr[1:])
+
+#print(change_x('xxhixx'))
+
+######### 20  ##########
+
+def array_6(arr, idx):
+    if len(arr) == idx:
+        return False
+    else:
+        if arr[idx] == 6:
+            return True
+        else:
+            return array_6(arr, idx+1)
+
+#print(array_6([1,5,4,3,6], 0))
+
+###############  21  ##########
+
+def all_star(n):
+    if len(n) == 0:
+        return ""
+    else:
+        if len(n) == 1:
+            return n[0] + all_star(n[1:])
+        return n[0] + "*" + all_star(n[1:])
+
+#print(all_star('hello'))
+
+
+###########  22   ############
+
+def count_pairs(n):
+    if len(n) < 3:
+        return 0
+    else:
+        if n[0] == n[2]:
+            return 1 + count_pairs(n[1:])
+        else:
+            return count_pairs(n[1:])
+
+# print(count_pairs('axaxax'))
+
+
+########  23  ###########
+
+def clean(n):
+    if len(n)-1 == 0:
+        return ""
+    else:
+        if n[0] == n[1]:
+            return clean(n[1:])
+        else:
+            return n[0] + clean(n[1:])
+
+# print(clean('abbbbccddddd'))
+
+
+############  24  ##########
+
+def nest(n):
+    if len(n) == 1:
+        return False
+    else:
+        if len(n) == 0:
+            return True
+        else:
+            if n[0] == '(' and n[-1] == ')':
+                return nest(n[1:len(n)-1])
+
+# print(nest('((x))'))
+
+
+###########  25  ###########
+
+def str_dis(n, sub):
+    if len(n) < len(sub):
+        return 0
+    elif n[:len(sub)] == sub and n[-len(sub):] == sub:
+        return len(n)
+    elif n[:len(sub)] != sub:
+        return str_dis(n[1:], sub)
+    elif n[-len(sub):] != sub:
+        return str_dis(n[:-1], sub)
+
+
+#print(str_dis('cccatcowcatxx', 'cat'))
+
+##########  26  ############
+
