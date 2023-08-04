@@ -53,11 +53,12 @@ def lowerr(n):
 def pi(n):
     if len(n) == 0:
         return ""
-    else:
+    elif len(n) >= 2:
         if n[0] == "p" and n[1] == "i":
             return "3.14" + pi(n[2:])
         else:
             return n[0] + pi(n[1:])
+    return n[0] + pi(n[1:])
 
 #print(pi("xpipix"))
 
@@ -337,4 +338,4 @@ def str_dis(n, sub):
 #print(str_dis('cccatcowcatxx', 'cat'))
 
 ##########  26  ############
-
+    pass
