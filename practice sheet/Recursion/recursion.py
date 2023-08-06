@@ -318,8 +318,10 @@ def nest(n):
         else:
             if n[0] == '(' and n[-1] == ')':
                 return nest(n[1:len(n)-1])
+            else:
+                return False
 
-# print(nest('((x))'))
+#print(nest('(((x)))'))
 
 
 ###########  25  ###########
