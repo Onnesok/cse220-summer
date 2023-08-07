@@ -290,21 +290,21 @@ def count_pairs(n):
         else:
             return count_pairs(n[1:])
 
-# print(count_pairs('axaxax'))
+#print(count_pairs('axa'))
 
 
 ########  23  ###########
 
 def clean(n):
     if len(n)-1 == 0:
-        return ""
+        return n
     else:
         if n[0] == n[1]:
             return clean(n[1:])
         else:
             return n[0] + clean(n[1:])
 
-# print(clean('abbbbccddddd'))
+print(clean('hello'))
 
 
 ############  24  ##########
