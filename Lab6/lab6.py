@@ -38,14 +38,12 @@ print("power: ",power(3,3))
 ################################ Task 2  ###############################
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   2A   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 def binary(n):
-  a = n%2
-  if n<2:
-    return str(a)
+  rem = n%2
+  if n == 0:
+    return ""
   else:
-    n = n//2
-    return binary(n)+str(a)
-
-print("Binary number: ",binary(10))
+    return binary(n//2) + str(rem)
+print("Binary number: ",binary(20))
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   2B   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 import math
