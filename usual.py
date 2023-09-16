@@ -271,7 +271,7 @@ print()
 root2 = tree_construction([None, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', None, None, None, 'I', 'J', None, 'k'])
 inorder(root2)
 print()
-preorder(root2)
+preorder(root2)0
 print()
 postorder(root2)
 print()
